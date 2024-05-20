@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    
+    <script src="https://kit.fontawesome.com/03c18f534b.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  
+ 
 </head>
 <body>
     <!-- navbar goes here -->
@@ -15,13 +18,12 @@
           Rajeev
         </div>
 
-        <ul class="md:flex hidden font-bold items-center text-lg">
-            <li class="mx-[10px] cursor-pointer hover:border-solid hover:border-b-4 border-orange-500 py-[19px]">About Me</li>
-            <li class="mx-[10px] cursor-pointer hover:border-solid hover:border-b-4 border-orange-500 py-[19px]">Projects</li>
-            <li class="mx-[10px] cursor-pointer hover:border-solid hover:border-b-4 border-orange-500 py-[19px]">Education</li>
-            <li class="mx-[10px] cursor-pointer hover:border-solid hover:border-b-4 border-orange-500 py-[19px]">Contact Me</li>
-            <li class="mx-[10px] cursor-pointer hover:border-solid hover:border-b-4 border-orange-500 py-[19px]">Portfolio</li>
-        </ul>
+        <div class="md:flex hidden font-bold items-center text-lg">
+           <a href="#aboutMe" class="mx-[10px] cursor-pointer hover:border-solid hover:border-b-4 border-orange-500 py-[19px]">About Me </a>
+           <a href="#project" class="mx-[10px] cursor-pointer hover:border-solid hover:border-b-4 border-orange-500 py-[19px]">Projects </a>
+           <a href="#education" class="mx-[10px] cursor-pointer hover:border-solid hover:border-b-4 border-orange-500 py-[19px]">Education </a>
+           <a href="#contact" class="mx-[10px] cursor-pointer hover:border-solid hover:border-b-4 border-orange-500 py-[19px]">Contact Me </a>
+           </div>
         <div class="border-style:solid bg-orange-600 p-2 rounded-xl hover:bg-orange-700">
          <a href="../resume/Rajeev Verma node3.pdf" download="Rajeev Resume"><button >Resume Download</button></a>
         </div>
@@ -32,7 +34,7 @@
    
     <main>
         <!-- aboutUs goes here -->
-        <div class="w-full h-auto flex flex-col-reverse items-center p-6  px-2 tracking-wider md:flex-row md:p-20 ">
+        <div id="aboutMe" class="w-full h-auto flex flex-col-reverse items-center p-6  px-2 tracking-wider md:flex-row md:p-20 ">
             <div class="m-10">
                 <h3 class="text-2xl font-bold md:text-4xl">Hiii</h3>
                 <h1 class="font-bold md:text-6xl">I'm <span class="font-bold text-orange-500 text-xl md:text-6xl">Rajeev Verma<br></span>a Node.Js Developer</h1>
@@ -58,8 +60,8 @@
         <!-- aboutus end here -->
 
         <!-- project goes here -->
-        <div class="text-white bg-black w-full py-5">
-            <h1 class="text-center text-5xl font-bold text-orange-700">Projects</h1>
+        <div id="project" class="text-white bg-black w-full py-5">
+            <h1 class="text-center text-5xl font-bold text-orange-500">Projects</h1>
           
             <div class="md:flex md:justify-evenly md:flex-wrap m-5">
           
@@ -128,20 +130,76 @@
 
         <!-- Eduction Section goes here -->
 
-        <div class="w-full text-black my-5">
-            <h1 class="text-center text-5xl font-bold text-orange-700">Education</h1>
+        <div id="education" class="w-full text-black my-5">
+            <h1 class="text-center text-5xl font-bold text-orange-500">Education</h1>
 
-            <div class="border-solid border-black m-5 flex md:justify-evenly md:mx-20 ring-2 ring-black p-3 rounded-2xl md:w-[1100px]">
+            <div class=" w-72 border-solid border-black m-5 flex flex-col md:justify-evenly md:flex-row md:mx-20 ring-2 ring-black p-3 rounded-2xl md:w-[1100px]">
                 <div >
-                <img  class="h-60 w-96 ring-1 ring-black rounded-lg" src="../resume/I.T.S School of Management.jpg" alt="">
+                <img  class=" md:h-60 md:w-96 ring-1 ring-black rounded-lg" src="../resume/rd-engineering-college.jpg" alt="">
                 </div>
-                <div>
-                    <h2 class="text-2xl font-semibold"><span class="font-bold">Master's of computer application</span><br>
-                      R.D.Engineering College <br> Duhai, Gaziabad, Uttar Pardesh <br> Duration: 2022 - 2024</p>
+                <div class="text-center md:my-10">
+                    <h2 class="md:text-2xl font-semibold"><span class="font-bold">Master's of computer application</span><br>
+                      R.D.Engineering College <br> Duhai, Ghaziabad, Uttar Pardesh <br> Duration: 2022 - 2024</p>
                       
                   </div>
             </div>
+       
+            <div class="w-72 border-solid border-black m-5 flex flex-col md:justify-evenly md:flex-row md:mx-20 ring-2 ring-black p-3 rounded-2xl md:w-[1100px]">
+                <div >
+                <img  class=" md:h-60 md:w-96 ring-1 ring-black rounded-lg" src="../resume/I.T.S School of Management.jpg" alt="">
+                </div>
+                <div class="text-center md:my-10">
+                    <h2 class="md:text-2xl font-semibold"><span class="font-bold">Bachelor's of computer application</span><br>
+                        Institute Of Technology & Sciences <br> Mohan Nagar, Ghaziabad, Uttar Pardesh  <br> Duration: 2019 - 2022</p>
+                      
+                  </div>
+            </div>
+       
+       
         </div>
+
+        <!-- Education section end here -->
+
+
+        <!-- Contact Section goes here -->
+
+        <div id="contact" class="w-full text-white bg-black my-5">
+            <h1 class="text-center text-5xl font-bold text-orange-500 md:p-7">Contact Me</h1>
+
+            <div>
+                <form action="" class="flex flex-col items-center">
+                    <input type="text" placeholder="Full Name" class="md:w-[400px] h-10 my-3 rounded-lg text-xl font-semibold md:p-3">
+                    <input type="text" placeholder="Email" class="md:w-[400px] h-10 my-3 rounded-lg text-xl font-semibold md:p-3">
+                    <input type="text" placeholder="Subject" class="md:w-[400px] h-10 my-3 rounded-lg text-xl font-semibold md:p-3">
+                    <input type="text" placeholder="Phone Number" class="md:w-[400px] h-10 my-3 rounded-lg text-xl font-semibold md:p-3">
+                    <input type="text" name="" id="" placeholder="Type Your Message...." class="md:w-[400px] h-24 my-3 rounded-lg text-xl font-semibold md:p-3 pb-20">
+                    <button class="text-center text-2xl font-semibold ring-1 ring-orange-500 bg-orange-500 rounded-lg p-2 my-5">Send Message</button>
+                </form>
+            </div>
+        </div>
+
+           <!-- Contact end here -->
+
+
     </main>
+
+    <footer>
+        <div>
+            <div class="text-center">
+                <a href="https://www.instagram.com/rajiv__verma_?utm_source=qr&igsh=MWNpaWE1dWptNjN4eg=="> <i class="fa-brands fa-instagram fa-2xl mx-2 hover:scale-125" style="color: black;"></i></a>
+                <a href="https://x.com/RajeevVerm43660?t=7xRboVZDCwEov-_if3vybA&s=08 "><i class="fa-brands fa-twitter fa-xl mx-2 hover:scale-125" style="color: black;"></i></a>
+                <a
+                  href="https://www.linkedin.com/in/rajeev-verma-915223193?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+                    class="fa-brands fa-linkedin fa-xl mx-2 hover:scale-125" style="color: black;"></i></a>
+             
+            </div>
+            <div class="flex md:justify-center m-2 text-lg font-semibold">
+               <a href="#project"> <h3 class="m-2 hover:scale-110">Project</h3> </a>
+                <a href="#contact"> <h3 class="m-2 hover:scale-110">Contact Me</h3> </a>
+                <a href="#education"> <h3 class="m-2 hover:scale-110">Education</h3> </a>
+                <a href="#aboutMe"><h3 class="m-2 hover:scale-110">About me</h3> </a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
